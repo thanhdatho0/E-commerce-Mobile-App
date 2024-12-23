@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:my_first_app/home/food_page_body.dart';
 import 'package:my_first_app/utils/colors.dart';
 import 'package:my_first_app/utils/dimensions.dart';
 import 'package:my_first_app/widgets/big_text.dart';
 import 'package:my_first_app/widgets/small_text.dart';
+
+import 'food_page_body.dart';
 
 
 class MainFoodPage extends StatefulWidget {
@@ -28,12 +29,13 @@ class _MainFoodPageState extends State<MainFoodPage> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       BigText(text: "Vietnam", color: AppColors.mainColor),
                       Row(
                         children: [
                           SmallText(text: "TP.Hồ Chí Minh", color: Colors.black54,),
-                          Icon(Icons.arrow_drop_down_rounded),
+                          const Icon(Icons.arrow_drop_down_rounded),
                         ],
                       )
                     ],
@@ -53,8 +55,10 @@ class _MainFoodPageState extends State<MainFoodPage> {
           ),
           // End
 
-          // Slider
-          const FoodPageBody(),
+          // Body
+          const Expanded(child: SingleChildScrollView(
+            child: FoodPageBody(),
+          ),),
           // End
         ],
       ),

@@ -8,16 +8,19 @@ class SmallText extends StatelessWidget {
   final String text;
   double size;
   double height;
+  TextOverflow? textOverflow;
   //Constructor
   SmallText({super.key, this.color = const Color(0xFFccc7c5),
     required this.text,
     this.size = 0,
     this.height = 0,
+    this.textOverflow = TextOverflow.visible
   });
 
   @override
   Widget build(BuildContext context) {
     return Text(
+      overflow: textOverflow,
       text,
       style: TextStyle(
         fontFamily: 'Roboto',

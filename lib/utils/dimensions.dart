@@ -8,6 +8,7 @@ class Dimensions{
   static double pageViewContainer = screenHeight/4.046;
   static double pageViewTextContainer = screenHeight/7.42;
 
+  static double height5 = screenHeight/178.06;
   static double height10 = screenHeight/89.03;
   static double height15 = screenHeight/59.35;
   static double height20 = screenHeight/44.515;
@@ -15,6 +16,7 @@ class Dimensions{
   static double height30 = screenHeight/29.68;
   static double height45 = screenHeight/19.785;
   static double height1dot2 = screenHeight/741.92;
+  static double height1dot8 = screenHeight/494.6;
 
   static double width5 = screenWidth/82.286;
   static double width10 = screenWidth/41.143;
@@ -24,7 +26,23 @@ class Dimensions{
   static double width30 = screenWidth/13.714;
   static double width45 = screenWidth/9.143;
 
+  // Icon
+  static double iconSize16 = screenHeight/55.64375;
+  static double iconSize40 = screenHeight/22.2575;
 
+  // Text font-size
+  static double font26 = screenHeight/34.24;
   static double font20 = screenHeight/44.515;
   static double font12 = screenHeight/74.192;
+  static double font16 = screenHeight/55.64375;
+  // End
+
+  //List view size
+  static double listViewImgSize = screenHeight/7.42;
+  static double listViewTextSize = screenHeight/8.903;
+
+  // Popular Food Page
+  static double foodDetailPageImg = screenHeight/2.54;
+  static double foodDetailPageFooter = screenHeight/7.42;
+  static double foodDetailPageTextDefault = screenHeight/7.42;
 }
